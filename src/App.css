@@ -1,0 +1,246 @@
+/* Центрируем контейнер по вертикали и горизонтали */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Оформление формы */
+.login-form {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  min-width: 320px;
+  text-align: center;
+}
+
+/* Стиль для input и select */
+.login-input,
+.login-select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Стиль для кнопки */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #357ABD;
+}
+
+
+
+
+
+/* Центрируем контейнер */
+.student-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef6fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Оформление основного блока */
+.student-dashboard {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 360px;
+  text-align: center;
+}
+
+/* Приветствие */
+.student-greeting {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Стиль для input[type=file] */
+.file-input {
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Стиль для кнопки */
+.send-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2d8cff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #1a6fe0;
+}
+
+
+
+
+/* Контейнер центрирует содержимое */
+.admin-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* сверху */
+  padding-top: 40px;
+  background: #eef6fb;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Основной блок */
+.admin-dashboard {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 480px;
+  min-height: 300px;
+}
+
+/* Заголовок */
+.admin-dashboard h2 {
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Список заявок */
+.submission-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* Один элемент списка */
+.submission-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+/* Имя пользователя */
+.submission-user {
+  flex: 1 1 auto;
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+  font-size: 16px;
+}
+
+/* Ссылка скачивания */
+.download-link {
+  color: #2d8cff;
+  text-decoration: none;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.download-link:hover {
+  text-decoration: underline;
+}
+
+/* Кнопка удаления */
+.delete-button {
+  background-color: #ff4d4f;
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.delete-button:hover {
+  background-color: #d9363e;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.password-input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.login-button {
+  padding: 8px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  margin: 0;
+}
