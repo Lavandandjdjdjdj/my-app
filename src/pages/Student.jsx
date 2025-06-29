@@ -1,9 +1,10 @@
+
 import { useState } from "react";
 import "../App.css"; // импорт стилей (если нужно)
 
-function StudentDashboard() {
+function Student() {
   const storedStudent = localStorage.getItem("student");
-  const student = storedStudent ? JSON.parse(storedStudent) : { name: '', surname: '' };
+  const student = storedStudent ? JSON.parse(storedStudent) : { number: ''};
   const [file, setFile] = useState(null);
 
   const handleSend = () => {
@@ -17,7 +18,7 @@ function StudentDashboard() {
     formData.append("name", student.name);
     formData.append("surname", student.surname);
 
-    fetch("http://localhost:5000/submissions", {
+    fetch("http://localhost:8000/submissions", {
       method: "POST",
       body: formData,
     })
@@ -39,7 +40,7 @@ function StudentDashboard() {
       <div className="student-dashboard">
         <h2>Кабинет студента</h2>
         <p className="student-greeting">
-          Привет, {student.name || 'Гость'} {student.surname || ''}
+          Привет, {student.name || 'Гость'} {student.surname}
         </p>
         <input
           type="file"
@@ -48,10 +49,10 @@ function StudentDashboard() {
         />
         <button onClick={handleSend} className="send-button">
           Отправить диплом/олимпиаду
-        </button>
+        </button>  
       </div>
     </div>
   );
 }
 
-export default StudentDashboard;
+export default Student;
